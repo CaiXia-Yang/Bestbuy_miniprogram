@@ -52,6 +52,11 @@ Page({
     getFloorList(){
       request({url:"/home/floordata"})
       .then(result=>{
+        var floorList=result.forEach(v => {
+          v.product_list.forEach(v1=>{
+            v1.navigator_url=v1.navigator_url.replace("?","/goods_list?")
+          })
+        });
         this.setData({
           floorList:result
         })

@@ -7,6 +7,7 @@
 		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
@@ -20,7 +21,9 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.4",
@@ -131,6 +134,19 @@
 					"name": "商品收藏",
 					"pathName": "pages/collect/collect",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索中心",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/feedback/feedback",
 					"scene": null
 				}
 			]
